@@ -3,19 +3,27 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4EA842C0DF187290FBE0DE4F /* Pods_Marvel_ITG.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8C52712E7A553A7FD5DE2E /* Pods_Marvel_ITG.framework */; };
 		F2114BB1249D23DB00B82B20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2114BB0249D23DB00B82B20 /* AppDelegate.swift */; };
 		F2114BB3249D23DB00B82B20 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2114BB2249D23DB00B82B20 /* SceneDelegate.swift */; };
 		F2114BB5249D23DB00B82B20 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2114BB4249D23DB00B82B20 /* ViewController.swift */; };
 		F2114BB8249D23DB00B82B20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2114BB6249D23DB00B82B20 /* Main.storyboard */; };
 		F2114BBA249D23DD00B82B20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2114BB9249D23DD00B82B20 /* Assets.xcassets */; };
 		F2114BBD249D23DD00B82B20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2114BBB249D23DD00B82B20 /* LaunchScreen.storyboard */; };
+		F2114BC6249D3EBC00B82B20 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2114BC5249D3EBC00B82B20 /* APIRouter.swift */; };
+		F2114BC8249D3ED400B82B20 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2114BC7249D3ED400B82B20 /* APIClient.swift */; };
+		F2114BCA249D3EE400B82B20 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2114BC9249D3EE400B82B20 /* Constants.swift */; };
+		F2114BCF249D46E300B82B20 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2114BCE249D46E300B82B20 /* RootViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		154254B9670E1BD7896846EC /* Pods-Marvel_ITG.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marvel_ITG.release.xcconfig"; path = "Target Support Files/Pods-Marvel_ITG/Pods-Marvel_ITG.release.xcconfig"; sourceTree = "<group>"; };
+		7D6D6F53D67638A29735842E /* Pods-Marvel_ITG.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marvel_ITG.debug.xcconfig"; path = "Target Support Files/Pods-Marvel_ITG/Pods-Marvel_ITG.debug.xcconfig"; sourceTree = "<group>"; };
+		8E8C52712E7A553A7FD5DE2E /* Pods_Marvel_ITG.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Marvel_ITG.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2114BAD249D23DB00B82B20 /* Marvel_ITG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Marvel_ITG.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2114BB0249D23DB00B82B20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2114BB2249D23DB00B82B20 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +32,10 @@
 		F2114BB9249D23DD00B82B20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F2114BBC249D23DD00B82B20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F2114BBE249D23DD00B82B20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2114BC5249D3EBC00B82B20 /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
+		F2114BC7249D3ED400B82B20 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		F2114BC9249D3EE400B82B20 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F2114BCE249D46E300B82B20 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +43,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EA842C0DF187290FBE0DE4F /* Pods_Marvel_ITG.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		002DCD0B6DBCE6C9D76ABE3F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8E8C52712E7A553A7FD5DE2E /* Pods_Marvel_ITG.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A104E7C704C47F4D400763FE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7D6D6F53D67638A29735842E /* Pods-Marvel_ITG.debug.xcconfig */,
+				154254B9670E1BD7896846EC /* Pods-Marvel_ITG.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		F2114BA4249D23DB00B82B20 = {
 			isa = PBXGroup;
 			children = (
 				F2114BAF249D23DB00B82B20 /* Marvel_ITG */,
 				F2114BAE249D23DB00B82B20 /* Products */,
+				A104E7C704C47F4D400763FE /* Pods */,
+				002DCD0B6DBCE6C9D76ABE3F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +88,10 @@
 		F2114BAF249D23DB00B82B20 /* Marvel_ITG */ = {
 			isa = PBXGroup;
 			children = (
+				F2114BCD249D46AD00B82B20 /* View */,
+				F2114BCC249D469500B82B20 /* ViewModel */,
+				F2114BCB249D43DA00B82B20 /* Model */,
+				F2114BC4249D348400B82B20 /* Network */,
 				F2114BB0249D23DB00B82B20 /* AppDelegate.swift */,
 				F2114BB2249D23DB00B82B20 /* SceneDelegate.swift */,
 				F2114BB4249D23DB00B82B20 /* ViewController.swift */,
@@ -67,6 +103,38 @@
 			path = Marvel_ITG;
 			sourceTree = "<group>";
 		};
+		F2114BC4249D348400B82B20 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F2114BC5249D3EBC00B82B20 /* APIRouter.swift */,
+				F2114BC7249D3ED400B82B20 /* APIClient.swift */,
+				F2114BC9249D3EE400B82B20 /* Constants.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		F2114BCB249D43DA00B82B20 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F2114BCC249D469500B82B20 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F2114BCD249D46AD00B82B20 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F2114BCE249D46E300B82B20 /* RootViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +142,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F2114BC1249D23DD00B82B20 /* Build configuration list for PBXNativeTarget "Marvel_ITG" */;
 			buildPhases = (
+				B33E6816143EE581846730F6 /* [CP] Check Pods Manifest.lock */,
 				F2114BA9249D23DB00B82B20 /* Sources */,
 				F2114BAA249D23DB00B82B20 /* Frameworks */,
 				F2114BAB249D23DB00B82B20 /* Resources */,
+				00F79ADA890ED2DB7E2CD76D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,14 +202,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		00F79ADA890ED2DB7E2CD76D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Marvel_ITG/Pods-Marvel_ITG-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Marvel_ITG/Pods-Marvel_ITG-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Marvel_ITG/Pods-Marvel_ITG-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B33E6816143EE581846730F6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Marvel_ITG-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F2114BA9249D23DB00B82B20 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				F2114BB5249D23DB00B82B20 /* ViewController.swift in Sources */,
+				F2114BC6249D3EBC00B82B20 /* APIRouter.swift in Sources */,
 				F2114BB1249D23DB00B82B20 /* AppDelegate.swift in Sources */,
+				F2114BCF249D46E300B82B20 /* RootViewController.swift in Sources */,
+				F2114BC8249D3ED400B82B20 /* APIClient.swift in Sources */,
 				F2114BB3249D23DB00B82B20 /* SceneDelegate.swift in Sources */,
+				F2114BCA249D3EE400B82B20 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +397,7 @@
 		};
 		F2114BC2249D23DD00B82B20 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D6D6F53D67638A29735842E /* Pods-Marvel_ITG.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +416,7 @@
 		};
 		F2114BC3249D23DD00B82B20 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 154254B9670E1BD7896846EC /* Pods-Marvel_ITG.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
