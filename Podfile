@@ -7,7 +7,8 @@ target 'Marvel_ITG' do
 
   pod 'Kingfisher', '~> 5.0'
   pod 'RealmSwift'
-  pod 'Alamofire', '~> 5.0.0-beta.5'
+  pod 'Alamofire', '5.0.0-beta.7'
+  pod 'CryptoSwift'
 
   # Pods for Marvel_ITG
 
