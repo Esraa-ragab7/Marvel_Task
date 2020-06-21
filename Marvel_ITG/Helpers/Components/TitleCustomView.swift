@@ -7,14 +7,28 @@
 
 import UIKit
 
+@IBDesignable
 class TitleCustomView: UIView {
-
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    
+    @IBInspectable var offset: CGFloat = 10.0 {
+        didSet { setNeedsDisplay() }
     }
-    */
-
+    
+    @IBInspectable var fillColor: UIColor = .white {
+        didSet { setNeedsDisplay() }
+    }
+    
+    override func draw(_ rect: CGRect) {
+        let path = UIBezierPath()
+        
+        path.move(to: CGPoint(x: bounds.minX + offset, y: bounds.minY))
+        path.addLine(to: CGPoint(x: bounds.maxX, y: bounds.minY))
+        path.addLine(to: CGPoint(x: bounds.maxX - offset, y: bounds.maxY))
+        path.addLine(to: CGPoint(x: bounds.minX, y: bounds.maxY))
+        
+        path.close()
+        fillColor.setFill()
+        path.fill()
+    }
+    
 }

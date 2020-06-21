@@ -10,16 +10,18 @@ import Kingfisher
 
 class CharacterCell: UITableViewCell {
 
+    // MARK: - Outlets
+    
     @IBOutlet private weak var characterImageView: UIImageView!
     @IBOutlet private weak var nameLabel: UILabel!
     
-    override func prepareForReuse() {
-        super.prepareForReuse()
-        characterImageView.image = nil
-    }
+    // MARK: - Display Function
     
     func display(character: Character) {
-        characterImageView.kf.setImage(with: character.thumbnail?.imageUrl, placeholder: nil)
+        if let imageURL = character.thumbnail?.imageUrl {
+            characterImageView.kf.indicatorType = .activity
+            characterImageView.kf.setImage(with: imageURL)
+        }
         nameLabel.text = character.name
     }
 }
