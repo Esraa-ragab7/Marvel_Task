@@ -12,11 +12,11 @@ struct Character: Codable {
     let name: String?
     let description: String?
     let thumbnail: Image?
-    let resourceURI: String
-    let comics: ShowTypes
-    let series: ShowTypes
-    let stories: ShowTypes
-    let events: ShowTypes
+    let resourceURI: String?
+    let comics: ShowTypes?
+    let series: ShowTypes?
+    let stories: ShowTypes?
+    let events: ShowTypes?
     
 }
 

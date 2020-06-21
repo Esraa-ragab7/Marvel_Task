@@ -9,16 +9,20 @@ import Foundation
 import UIKit
 
 protocol CharactersDelegate {
-    func didTapSearch()
-    func didTapCancelSearch()
+    func loadMoreData()
     func didSelect(character: Character)
 }
 
 class CharacterViewModel: NSObject {
+    
+    // MARK: - Properties
+    
     var characters = [Character]()
     var delegate: CharactersDelegate?
     
 }
+
+// MARK: - UITableViewDataSource
 
 extension CharacterViewModel: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -26,6 +30,9 @@ extension CharacterViewModel: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if indexPath.row == characters.count - 1 {
+            delegate?.loadMoreData()
+        }
         if let cell = tableView.dequeueReusableCell(withIdentifier: "CharactersCell", for: indexPath) as? CharacterCell {
             cell.display(character: characters[indexPath.row])
             return cell
@@ -33,6 +40,8 @@ extension CharacterViewModel: UITableViewDataSource {
         return UITableViewCell()
     }
 }
+
+// MARK: - UITableViewDelegate
 
 extension CharacterViewModel: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

@@ -12,7 +12,7 @@ struct Image: Codable {
     let imageUrl: URL?
     let path: String
     let imageExtension: String
-    
+        
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         path = try container.decode(String.self, forKey: .path)
@@ -20,6 +20,11 @@ struct Image: Codable {
         imageUrl = URL(string: "\(path).\(imageExtension)") ?? nil
     }
     
+    init(imageUrl: URL) {
+        self.imageUrl = imageUrl
+        path = ""
+        imageExtension = ""
+    }
 }
 
 extension Image {
