@@ -14,8 +14,8 @@ struct Constants {
         
         static func getCredentials() -> String{
             let ts = Date().timeIntervalSince1970.description
-            let hash = "\(ts)\(ProductionServer.privateKey)\(ProductionServer.publicKey)".md5()
-            let authParams = ["ts": ts, "apikey": publicKey, "hash": hash]
+            let hash = "\(ts)\(valueForAPIKey(named:"privateKey"))\(valueForAPIKey(named:"publicKey"))".md5()
+            let authParams = ["ts": ts, "apikey": valueForAPIKey(named:"publicKey"), "hash": hash]
             return authParams.queryString!
         }
     }

@@ -25,6 +25,9 @@
 		F219F3FD249FA2A3007517D1 /* CharacterR.swift in Sources */ = {isa = PBXBuildFile; fileRef = F219F3FC249FA2A3007517D1 /* CharacterR.swift */; };
 		F219F3FF249FA359007517D1 /* RealmSingletoneManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F219F3FE249FA359007517D1 /* RealmSingletoneManager.swift */; };
 		F219F401249FA5B0007517D1 /* ImageR.swift in Sources */ = {isa = PBXBuildFile; fileRef = F219F400249FA5B0007517D1 /* ImageR.swift */; };
+		F219F404249FCDAE007517D1 /* Secrets.example.plist in Resources */ = {isa = PBXBuildFile; fileRef = F219F403249FCDAE007517D1 /* Secrets.example.plist */; };
+		F219F406249FCDBA007517D1 /* Secrets.plist in Resources */ = {isa = PBXBuildFile; fileRef = F219F405249FCDB9007517D1 /* Secrets.plist */; };
+		F219F408249FCE4D007517D1 /* AccessToApiKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = F219F407249FCE4C007517D1 /* AccessToApiKeys.swift */; };
 		F25ACA0E249F411800DF2D5A /* CardPagingLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25ACA0D249F411800DF2D5A /* CardPagingLayout.swift */; };
 		F25ACA10249F436A00DF2D5A /* ShowImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25ACA0F249F436A00DF2D5A /* ShowImageViewController.swift */; };
 		F25ACA12249F44A100DF2D5A /* ShowImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25ACA11249F44A100DF2D5A /* ShowImageViewModel.swift */; };
@@ -75,6 +78,9 @@
 		F219F3FC249FA2A3007517D1 /* CharacterR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterR.swift; sourceTree = "<group>"; };
 		F219F3FE249FA359007517D1 /* RealmSingletoneManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmSingletoneManager.swift; sourceTree = "<group>"; };
 		F219F400249FA5B0007517D1 /* ImageR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageR.swift; sourceTree = "<group>"; };
+		F219F403249FCDAE007517D1 /* Secrets.example.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Secrets.example.plist; sourceTree = "<group>"; };
+		F219F405249FCDB9007517D1 /* Secrets.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Secrets.plist; sourceTree = "<group>"; };
+		F219F407249FCE4C007517D1 /* AccessToApiKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessToApiKeys.swift; sourceTree = "<group>"; };
 		F25ACA0D249F411800DF2D5A /* CardPagingLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPagingLayout.swift; sourceTree = "<group>"; };
 		F25ACA0F249F436A00DF2D5A /* ShowImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowImageViewController.swift; sourceTree = "<group>"; };
 		F25ACA11249F44A100DF2D5A /* ShowImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowImageViewModel.swift; sourceTree = "<group>"; };
@@ -159,6 +165,8 @@
 				F2114BC4249D348400B82B20 /* Network */,
 				F2114BCD249D46AD00B82B20 /* Screens */,
 				F2114BB9249D23DD00B82B20 /* Assets.xcassets */,
+				F219F403249FCDAE007517D1 /* Secrets.example.plist */,
+				F219F405249FCDB9007517D1 /* Secrets.plist */,
 				F2114BBB249D23DD00B82B20 /* LaunchScreen.storyboard */,
 				F2114BBE249D23DD00B82B20 /* Info.plist */,
 			);
@@ -300,6 +308,7 @@
 				F285D992249D6CD700B0D87A /* Components */,
 				F285D993249D6D2100B0D87A /* TitleCustomView.swift */,
 				F25ACA0D249F411800DF2D5A /* CardPagingLayout.swift */,
+				F219F407249FCE4C007517D1 /* AccessToApiKeys.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -412,7 +421,9 @@
 			files = (
 				F2801EBA249DEEB700223B82 /* ShowCell.xib in Resources */,
 				F2114BBD249D23DD00B82B20 /* LaunchScreen.storyboard in Resources */,
+				F219F404249FCDAE007517D1 /* Secrets.example.plist in Resources */,
 				F2114BDC249D5E0300B82B20 /* SplashScreen.storyboard in Resources */,
+				F219F406249FCDBA007517D1 /* Secrets.plist in Resources */,
 				F2114BBA249D23DD00B82B20 /* Assets.xcassets in Resources */,
 				F25ACA16249F5F7500DF2D5A /* LoadingView.xib in Resources */,
 				F2801EB4249DDE4000223B82 /* ShowDetailsCell.xib in Resources */,
@@ -496,6 +507,7 @@
 				F2801EAC249DC73600223B82 /* DetailsViewController.swift in Sources */,
 				F2114BD1249D4B6200B82B20 /* Character.swift in Sources */,
 				F219F3FF249FA359007517D1 /* RealmSingletoneManager.swift in Sources */,
+				F219F408249FCE4D007517D1 /* AccessToApiKeys.swift in Sources */,
 				F25ACA14249F472900DF2D5A /* FullScreenImageCell.swift in Sources */,
 				F2114BD5249D4DA200B82B20 /* Image.swift in Sources */,
 				F2801EBE249E037700223B82 /* CollectionData.swift in Sources */,
