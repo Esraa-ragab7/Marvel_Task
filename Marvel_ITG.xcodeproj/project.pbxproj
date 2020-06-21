@@ -154,13 +154,12 @@
 		F2114BAF249D23DB00B82B20 /* Marvel_ITG */ = {
 			isa = PBXGroup;
 			children = (
+				F219F402249FB53D007517D1 /* AppDelegate */,
 				F219F3FA249FA281007517D1 /* Realm */,
 				F285D991249D6CCE00B0D87A /* Helpers */,
 				F2114BD6249D583400B82B20 /* Extension */,
 				F2114BCD249D46AD00B82B20 /* Screens */,
 				F2114BC4249D348400B82B20 /* Network */,
-				F2114BB0249D23DB00B82B20 /* AppDelegate.swift */,
-				F2114BB2249D23DB00B82B20 /* SceneDelegate.swift */,
 				F2114BB9249D23DD00B82B20 /* Assets.xcassets */,
 				F2114BBB249D23DD00B82B20 /* LaunchScreen.storyboard */,
 				F2114BBE249D23DD00B82B20 /* Info.plist */,
@@ -216,6 +215,15 @@
 				F219F400249FA5B0007517D1 /* ImageR.swift */,
 			);
 			path = RealmClasses;
+			sourceTree = "<group>";
+		};
+		F219F402249FB53D007517D1 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				F2114BB0249D23DB00B82B20 /* AppDelegate.swift */,
+				F2114BB2249D23DB00B82B20 /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
 			sourceTree = "<group>";
 		};
 		F25ACA17249F6EA700DF2D5A /* Search */ = {
