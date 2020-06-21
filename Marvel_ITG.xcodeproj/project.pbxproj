@@ -50,7 +50,6 @@
 		F285D998249D6EAB00B0D87A /* CharacterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F285D997249D6EAB00B0D87A /* CharacterCell.swift */; };
 		F285D99A249D726200B0D87A /* DictionaryExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = F285D999249D726200B0D87A /* DictionaryExtention.swift */; };
 		F285D9A0249D7C6B00B0D87A /* CharacterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F285D99F249D7C6B00B0D87A /* CharacterViewModel.swift */; };
-		F2887A6F249F927000AD0A97 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2887A6E249F927000AD0A97 /* TextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -101,7 +100,6 @@
 		F285D997249D6EAB00B0D87A /* CharacterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCell.swift; sourceTree = "<group>"; };
 		F285D999249D726200B0D87A /* DictionaryExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryExtention.swift; sourceTree = "<group>"; };
 		F285D99F249D7C6B00B0D87A /* CharacterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterViewModel.swift; sourceTree = "<group>"; };
-		F2887A6E249F927000AD0A97 /* TextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -309,7 +307,6 @@
 			isa = PBXGroup;
 			children = (
 				F285D993249D6D2100B0D87A /* TitleCustomView.swift */,
-				F2887A6E249F927000AD0A97 /* TextField.swift */,
 				F25ACA15249F5F7500DF2D5A /* LoadingView.xib */,
 			);
 			path = Components;
@@ -485,7 +482,6 @@
 				F2801EAE249DC76000223B82 /* DetailsViewModel.swift in Sources */,
 				F2114BB3249D23DB00B82B20 /* SceneDelegate.swift in Sources */,
 				F2801EB3249DDE4000223B82 /* ShowDetailsCell.swift in Sources */,
-				F2887A6F249F927000AD0A97 /* TextField.swift in Sources */,
 				F25ACA1C249F6FBF00DF2D5A /* SearchCell.swift in Sources */,
 				F2114BCA249D3EE400B82B20 /* Constants.swift in Sources */,
 				F2114BD3249D4D7F00B82B20 /* ShowType.swift in Sources */,
