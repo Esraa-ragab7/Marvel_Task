@@ -7,6 +7,6 @@
 
 import UIKit
 
-class SearchCell: UICollectionViewCell {
+class SearchCell: CharacterCell {
     
 }
