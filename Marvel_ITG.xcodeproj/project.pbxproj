@@ -156,8 +156,8 @@
 				F219F3FA249FA281007517D1 /* Realm */,
 				F285D991249D6CCE00B0D87A /* Helpers */,
 				F2114BD6249D583400B82B20 /* Extension */,
-				F2114BCD249D46AD00B82B20 /* Screens */,
 				F2114BC4249D348400B82B20 /* Network */,
+				F2114BCD249D46AD00B82B20 /* Screens */,
 				F2114BB9249D23DD00B82B20 /* Assets.xcassets */,
 				F2114BBB249D23DD00B82B20 /* LaunchScreen.storyboard */,
 				F2114BBE249D23DD00B82B20 /* Info.plist */,
@@ -279,7 +279,6 @@
 				F2801EB2249DDE4000223B82 /* ShowDetailsCell.xib */,
 				F2801EB7249DEEB700223B82 /* ShowCell.swift */,
 				F2801EB8249DEEB700223B82 /* ShowCell.xib */,
-				F25ACA0D249F411800DF2D5A /* CardPagingLayout.swift */,
 				F25ACA0F249F436A00DF2D5A /* ShowImageViewController.swift */,
 				F25ACA13249F472900DF2D5A /* FullScreenImageCell.swift */,
 			);
@@ -299,6 +298,8 @@
 			isa = PBXGroup;
 			children = (
 				F285D992249D6CD700B0D87A /* Components */,
+				F285D993249D6D2100B0D87A /* TitleCustomView.swift */,
+				F25ACA0D249F411800DF2D5A /* CardPagingLayout.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -306,7 +307,6 @@
 		F285D992249D6CD700B0D87A /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				F285D993249D6D2100B0D87A /* TitleCustomView.swift */,
 				F25ACA15249F5F7500DF2D5A /* LoadingView.xib */,
 			);
 			path = Components;
