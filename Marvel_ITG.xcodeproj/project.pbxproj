@@ -164,10 +164,9 @@
 				F2114BD6249D583400B82B20 /* Extension */,
 				F2114BC4249D348400B82B20 /* Network */,
 				F2114BCD249D46AD00B82B20 /* Screens */,
-				F2114BB9249D23DD00B82B20 /* Assets.xcassets */,
+				F219F409249FE972007517D1 /* Assets */,
 				F219F403249FCDAE007517D1 /* Secrets.example.plist */,
 				F219F405249FCDB9007517D1 /* Secrets.plist */,
-				F2114BBB249D23DD00B82B20 /* LaunchScreen.storyboard */,
 				F2114BBE249D23DD00B82B20 /* Info.plist */,
 			);
 			path = Marvel_ITG;
@@ -191,6 +190,7 @@
 				F285D99B249D7BEC00B0D87A /* Characters */,
 				F2114BCE249D46E300B82B20 /* RootViewController.swift */,
 				F2114BD9249D5CDB00B82B20 /* SplashViewController.swift */,
+				F2114BBB249D23DD00B82B20 /* LaunchScreen.storyboard */,
 				F2114BDB249D5E0300B82B20 /* SplashScreen.storyboard */,
 				F2114BB6249D23DB00B82B20 /* Main.storyboard */,
 			);
@@ -230,6 +230,14 @@
 				F2114BB2249D23DB00B82B20 /* SceneDelegate.swift */,
 			);
 			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		F219F409249FE972007517D1 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				F2114BB9249D23DD00B82B20 /* Assets.xcassets */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 		F25ACA17249F6EA700DF2D5A /* Search */ = {
