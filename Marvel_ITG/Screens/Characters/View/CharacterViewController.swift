@@ -55,7 +55,7 @@ extension CharacterViewController {
     private func loadData(offset: Int, limit: Int) {
         charactersTableView.tableFooterView = loadingView
         charactersTableView.tableFooterView?.frame = .init(x: 0, y: 0, width: charactersTableView.frame.width, height: 100)
-
+        self.offset = offset
         APIClient.getCharchters(offset: offset, limit: limit) { (result) in
             switch result {
             case .success(let charactesResponse):
