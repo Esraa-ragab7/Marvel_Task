@@ -9,21 +9,23 @@ import UIKit
 
 class ShowImageViewController: UIViewController {
 
+    // MARK: - Outlets
+    @IBOutlet weak var imageCollectionView: UICollectionView!
+    
+    // MARk: - Properties
+    private var viewModel: ShowImageViewModel!
+    var data: [ShowType]!
+    var index: Int!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        viewModel = ShowImageViewModel(collectionData: data, index: index)
+        imageCollectionView.dataSource = viewModel
+        imageCollectionView.layoutIfNeeded()
+        imageCollectionView.scrollToItem(at: IndexPath(row: index, section: 0), at: .right, animated: false)
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func closeAction(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
     }
-    */
-
 }

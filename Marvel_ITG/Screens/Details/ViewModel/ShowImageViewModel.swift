@@ -6,3 +6,31 @@
 //
 
 import Foundation
+import UIKit
+
+class ShowImageViewModel: NSObject {
+    
+    var collectionData: [ShowType]!
+    var index: Int!
+    
+    init(collectionData: [ShowType], index: Int) {
+        super.init()
+        self.collectionData = collectionData
+        self.index = index
+    }
+    
+}
+
+extension ShowImageViewModel: UICollectionViewDataSource, UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return collectionData.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FullScreenImageCell", for: indexPath) as? FullScreenImageCell {
+            cell.display(showType: collectionData[indexPath.row], index: indexPath.row, count: collectionData.count)
+            return cell
+        }
+        return UICollectionViewCell()
+    }
+}

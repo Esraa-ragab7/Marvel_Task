@@ -6,15 +6,22 @@
 //
 
 import UIKit
+import Kingfisher
 
 class DetailsHeaderView: UITableViewHeaderFooterView {
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    // MARK: - Outlets
+    
+    @IBOutlet private weak var headerImageView: UIImageView!
+    @IBOutlet private weak var nameLabel: UILabel!
+    @IBOutlet private weak var descriptionLabel: UILabel!
+    
+    // MARK: - Display Function
+    
+    func display(character: Character) {
+        headerImageView.kf.setImage(with: character.thumbnail?.imageUrl)
+        nameLabel.text = character.name
+        descriptionLabel.text = character.description
     }
-    */
-
+    
 }

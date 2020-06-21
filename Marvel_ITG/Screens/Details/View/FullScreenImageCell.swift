@@ -8,7 +8,7 @@
 import UIKit
 import Kingfisher
 
-class fullScreenImageCell: UICollectionViewCell {
+class FullScreenImageCell: UICollectionViewCell {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var title: UILabel!
     @IBOutlet weak var imageNumber: UILabel!
@@ -16,6 +16,6 @@ class fullScreenImageCell: UICollectionViewCell {
     func display(showType: ShowType, index: Int, count: Int) {
         imageView.kf.setImage(with: showType.thumbnail.imageUrl)
         title.text = showType.title
-        imageNumber.text = "\(index)/\(count)"
+        imageNumber.text = "\(index + 1)/\(count)"
     }
 }
