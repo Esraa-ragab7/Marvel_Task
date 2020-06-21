@@ -6,3 +6,10 @@
 //
 
 import Foundation
+import Realm
+import RealmSwift
+
+class ImageR: Object {
+    @objc dynamic var path: String? = ""
+    
+}
