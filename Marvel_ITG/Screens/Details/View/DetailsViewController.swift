@@ -19,15 +19,14 @@ class DetailsViewController: UIViewController {
     
     // MARk: - Properties
     private var viewModel: DetailsViewModel!
-    
     var character: Character!
     
+    // MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.register(UINib(nibName: "ShowDetailsCell", bundle: nil), forCellReuseIdentifier: "ShowDetailsCell")
         viewModel = DetailsViewModel(character: character, tableView: tableView)
         tableView.dataSource = viewModel
-        tableView.delegate = viewModel
         
         backgroundImage.kf.setImage(with: character.thumbnail?.imageUrl)
         addBlur(1, backgroundImage)
@@ -40,7 +39,31 @@ class DetailsViewController: UIViewController {
         self.navigationController?.navigationBar.isHidden = true
     }
     
-    func addBlur(_ alpha: CGFloat = 0.5, _ imageView: UIImageView) {
+    // MARK: - Prepare For Segue
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showImage" {
+            let destination = segue.destination as! ShowImageViewController
+            destination.data = (sender as! [Any])[0] as? [ShowType]
+            destination.index = (sender as! [Any])[1] as? Int
+        }
+    }
+    
+    
+}
+
+// MARK: - ShowDetailsCellDelegate
+
+extension DetailsViewController: ShowDetailsCellDelegate {
+    func showImageWithIndex(data: [ShowType], index: Int) {
+        performSegue(withIdentifier: "showImage", sender: [data, index])
+    }
+}
+
+// MARK: - Private Functions & InterActions
+
+extension DetailsViewController {
+    private func addBlur(_ alpha: CGFloat = 0.5, _ imageView: UIImageView) {
         // create effect
         let effect = UIBlurEffect(style: .dark)
         let effectView = UIVisualEffectView(effect: effect)
@@ -53,21 +76,7 @@ class DetailsViewController: UIViewController {
         imageView.addSubview(effectView)
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "showImage" {
-            let destination = segue.destination as! ShowImageViewController
-            destination.data = (sender as! [Any])[0] as? [ShowType]
-            destination.index = (sender as! [Any])[1] as? Int
-        }
-    }
-    
     @IBAction func backAction(_ sender: Any) {
         navigationController?.popViewController(animated: true)
-    }
-}
-
-extension DetailsViewController: ShowDetailsCellDelegate {
-    func showImageWithIndex(data: [ShowType], index: Int) {
-        performSegue(withIdentifier: "showImage", sender: [data, index])
     }
 }

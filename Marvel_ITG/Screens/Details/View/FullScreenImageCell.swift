@@ -9,9 +9,14 @@ import UIKit
 import Kingfisher
 
 class FullScreenImageCell: UICollectionViewCell {
+    
+    // MARK: - Outlets
+
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var title: UILabel!
     @IBOutlet weak var imageNumber: UILabel!
+    
+    // MARK: - Display Function
     
     func display(showType: ShowType, index: Int, count: Int) {
         imageView.kf.setImage(with: showType.thumbnail.imageUrl)

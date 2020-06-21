@@ -21,7 +21,7 @@ class DetailsHeaderView: UITableViewHeaderFooterView {
     func display(character: Character) {
         headerImageView.kf.setImage(with: character.thumbnail?.imageUrl)
         nameLabel.text = character.name
-        descriptionLabel.text = character.description
+        descriptionLabel.text = character.description == "" ? "No Description Provided... " : character.description
     }
     
 }

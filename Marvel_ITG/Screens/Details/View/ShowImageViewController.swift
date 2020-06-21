@@ -17,6 +17,7 @@ class ShowImageViewController: UIViewController {
     var data: [ShowType]!
     var index: Int!
     
+    // MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
         viewModel = ShowImageViewModel(collectionData: data, index: index)
@@ -25,6 +26,8 @@ class ShowImageViewController: UIViewController {
         imageCollectionView.scrollToItem(at: IndexPath(row: index, section: 0), at: .right, animated: false)
     }
 
+    // MARK: - Actions
+    
     @IBAction func closeAction(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }

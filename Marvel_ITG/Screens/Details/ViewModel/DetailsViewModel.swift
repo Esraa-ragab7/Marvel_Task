@@ -14,32 +14,20 @@ class DetailsViewModel: NSObject {
     var character: Character!
     var shows: [[String: Any?]] = []
     var tableView: UITableView!
-    var tabelData: [[String: Any?]] = []
     
     init(character: Character, tableView: UITableView) {
         super.init()
         self.tableView = tableView
         self.character = character
-        getCollections(character.comics.collectionURI, character.comics.available, 0)
-        getCollections(character.series.collectionURI, character.series.available, 1)
-        getCollections(character.stories.collectionURI, character.stories.available, 2)
-        getCollections(character.events.collectionURI, character.events.available, 3)
-        appendInShows("COMICS", [])
-        appendInShows("SERIES", [])
-        appendInShows("STORIES", [])
-        appendInShows("EVENTS", [])
+        constructAllTheData()
     }
 }
 
-extension DetailsViewModel {
-    func appendInShows(_ title: String, _ showTypes: [ShowType]){
-        shows.append(["title": title, "data": showTypes])
-    }
-}
+// MARK: - UITableViewDataSource
 
 extension DetailsViewModel: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        tabelData.count
+        shows.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -51,31 +39,49 @@ extension DetailsViewModel: UITableViewDataSource {
     }
 }
 
-extension DetailsViewModel: UITableViewDelegate {
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-    }
-}
+// MARK: - getCollections
 
 extension DetailsViewModel {
     
     func getCollections(_ url: String, _ limit: Int, _ key: Int) {
-        APIClient.getCollections(limit: limit, url: url) { (result) in
+        url != "" ? APIClient.getCollections(limit: limit, url: url) { (result) in
             switch result {
             case .success(let res):
                 self.shows[key]["data"] = res.data.results
-                print(res.data.results.count)
-                self.tabelData = self.shows.filter({ (dic) -> Bool in
-                    if (dic["data"] as! [ShowType]).count > 0 {
-                        return true
-                    }
-                    return false
-                })
+                self.shows[key]["loading"] = false
                 self.tableView.reloadData()
             case .failure(let error):
-                print(error.localizedDescription)
+                self.shows[key]["loading"] = false
+                self.tableView.reloadData()
             }
+            } : nil
+    }
+    
+}
+
+// MARK: - constructAllTheData
+
+extension DetailsViewModel {
+    private func constructAllTheData() {
+        if character.comics?.available ?? 0 > 0 {
+            getCollections(character.comics?.collectionURI ?? "", character.comics?.available ?? 0, shows.count)
+            appendInShows("COMICS", [], true)
+        }
+        if character.series?.available ?? 0 > 0 {
+            getCollections(character.series?.collectionURI ?? "", character.series?.available ?? 0, shows.count)
+            appendInShows("SERIES", [], true)
+        }
+        if character.stories?.available ?? 0 > 0 {
+            getCollections(character.stories?.collectionURI ?? "", character.stories?.available ?? 0, shows.count)
+            appendInShows("STORIES", [], true)
+        }
+        if character.events?.available ?? 0 > 0 {
+            getCollections(character.events?.collectionURI ?? "", character.events?.available ?? 0, shows.count)
+            appendInShows("EVENTS", [], true)
         }
     }
     
+    func appendInShows(_ title: String, _ showTypes: [ShowType], _ loading: Bool){
+        shows.append(["title": title, "data": showTypes, "loading": loading])
+    }
 }

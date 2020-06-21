@@ -10,6 +10,8 @@ import UIKit
 
 class ShowImageViewModel: NSObject {
     
+    // MARK: - Properties
+    
     var collectionData: [ShowType]!
     var index: Int!
     
@@ -21,7 +23,9 @@ class ShowImageViewModel: NSObject {
     
 }
 
-extension ShowImageViewModel: UICollectionViewDataSource, UICollectionViewDelegate {
+// MARK: - UICollectionViewDataSource
+
+extension ShowImageViewModel: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return collectionData.count
     }
