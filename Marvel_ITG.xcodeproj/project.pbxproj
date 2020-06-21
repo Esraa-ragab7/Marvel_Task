@@ -22,11 +22,17 @@
 		F2114BD5249D4DA200B82B20 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2114BD4249D4DA200B82B20 /* Image.swift */; };
 		F2114BDA249D5CDB00B82B20 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2114BD9249D5CDB00B82B20 /* SplashViewController.swift */; };
 		F2114BDC249D5E0300B82B20 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2114BDB249D5E0300B82B20 /* SplashScreen.storyboard */; };
+		F219F3FD249FA2A3007517D1 /* CharacterR.swift in Sources */ = {isa = PBXBuildFile; fileRef = F219F3FC249FA2A3007517D1 /* CharacterR.swift */; };
+		F219F3FF249FA359007517D1 /* RealmSingletoneManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F219F3FE249FA359007517D1 /* RealmSingletoneManager.swift */; };
+		F219F401249FA5B0007517D1 /* ImageR.swift in Sources */ = {isa = PBXBuildFile; fileRef = F219F400249FA5B0007517D1 /* ImageR.swift */; };
 		F25ACA0E249F411800DF2D5A /* CardPagingLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25ACA0D249F411800DF2D5A /* CardPagingLayout.swift */; };
 		F25ACA10249F436A00DF2D5A /* ShowImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25ACA0F249F436A00DF2D5A /* ShowImageViewController.swift */; };
 		F25ACA12249F44A100DF2D5A /* ShowImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25ACA11249F44A100DF2D5A /* ShowImageViewModel.swift */; };
 		F25ACA14249F472900DF2D5A /* FullScreenImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25ACA13249F472900DF2D5A /* FullScreenImageCell.swift */; };
 		F25ACA16249F5F7500DF2D5A /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F25ACA15249F5F7500DF2D5A /* LoadingView.xib */; };
+		F25ACA1A249F6F9A00DF2D5A /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25ACA19249F6F9A00DF2D5A /* SearchViewController.swift */; };
+		F25ACA1C249F6FBF00DF2D5A /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25ACA1B249F6FBF00DF2D5A /* SearchCell.swift */; };
+		F25ACA1F249F70C100DF2D5A /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25ACA1E249F70C100DF2D5A /* SearchViewModel.swift */; };
 		F2801EA1249DAE2000223B82 /* CharacterResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2801EA0249DAE2000223B82 /* CharacterResponse.swift */; };
 		F2801EA3249DAE4400223B82 /* CharacterData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2801EA2249DAE4400223B82 /* CharacterData.swift */; };
 		F2801EA6249DB11F00223B82 /* ShowTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2801EA5249DB11F00223B82 /* ShowTypes.swift */; };
@@ -44,6 +50,7 @@
 		F285D998249D6EAB00B0D87A /* CharacterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F285D997249D6EAB00B0D87A /* CharacterCell.swift */; };
 		F285D99A249D726200B0D87A /* DictionaryExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = F285D999249D726200B0D87A /* DictionaryExtention.swift */; };
 		F285D9A0249D7C6B00B0D87A /* CharacterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F285D99F249D7C6B00B0D87A /* CharacterViewModel.swift */; };
+		F2887A6F249F927000AD0A97 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2887A6E249F927000AD0A97 /* TextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,11 +73,17 @@
 		F2114BD4249D4DA200B82B20 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		F2114BD9249D5CDB00B82B20 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		F2114BDB249D5E0300B82B20 /* SplashScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SplashScreen.storyboard; sourceTree = "<group>"; };
+		F219F3FC249FA2A3007517D1 /* CharacterR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterR.swift; sourceTree = "<group>"; };
+		F219F3FE249FA359007517D1 /* RealmSingletoneManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmSingletoneManager.swift; sourceTree = "<group>"; };
+		F219F400249FA5B0007517D1 /* ImageR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageR.swift; sourceTree = "<group>"; };
 		F25ACA0D249F411800DF2D5A /* CardPagingLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPagingLayout.swift; sourceTree = "<group>"; };
 		F25ACA0F249F436A00DF2D5A /* ShowImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowImageViewController.swift; sourceTree = "<group>"; };
 		F25ACA11249F44A100DF2D5A /* ShowImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowImageViewModel.swift; sourceTree = "<group>"; };
 		F25ACA13249F472900DF2D5A /* FullScreenImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenImageCell.swift; sourceTree = "<group>"; };
 		F25ACA15249F5F7500DF2D5A /* LoadingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingView.xib; sourceTree = "<group>"; };
+		F25ACA19249F6F9A00DF2D5A /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		F25ACA1B249F6FBF00DF2D5A /* SearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
+		F25ACA1E249F70C100DF2D5A /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		F2801EA0249DAE2000223B82 /* CharacterResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterResponse.swift; sourceTree = "<group>"; };
 		F2801EA2249DAE4400223B82 /* CharacterData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterData.swift; sourceTree = "<group>"; };
 		F2801EA5249DB11F00223B82 /* ShowTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowTypes.swift; sourceTree = "<group>"; };
@@ -88,6 +101,7 @@
 		F285D997249D6EAB00B0D87A /* CharacterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCell.swift; sourceTree = "<group>"; };
 		F285D999249D726200B0D87A /* DictionaryExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryExtention.swift; sourceTree = "<group>"; };
 		F285D99F249D7C6B00B0D87A /* CharacterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterViewModel.swift; sourceTree = "<group>"; };
+		F2887A6E249F927000AD0A97 /* TextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,11 +154,10 @@
 		F2114BAF249D23DB00B82B20 /* Marvel_ITG */ = {
 			isa = PBXGroup;
 			children = (
+				F219F3FA249FA281007517D1 /* Realm */,
 				F285D991249D6CCE00B0D87A /* Helpers */,
 				F2114BD6249D583400B82B20 /* Extension */,
 				F2114BCD249D46AD00B82B20 /* Screens */,
-				F2114BCC249D469500B82B20 /* ViewModel */,
-				F2114BCB249D43DA00B82B20 /* Model */,
 				F2114BC4249D348400B82B20 /* Network */,
 				F2114BB0249D23DB00B82B20 /* AppDelegate.swift */,
 				F2114BB2249D23DB00B82B20 /* SceneDelegate.swift */,
@@ -165,23 +178,10 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
-		F2114BCB249D43DA00B82B20 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		F2114BCC249D469500B82B20 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
 		F2114BCD249D46AD00B82B20 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				F25ACA17249F6EA700DF2D5A /* Search */,
 				F2801EA7249DBF7B00223B82 /* Details */,
 				F285D99B249D7BEC00B0D87A /* Characters */,
 				F2114BCE249D46E300B82B20 /* RootViewController.swift */,
@@ -198,6 +198,50 @@
 				F285D999249D726200B0D87A /* DictionaryExtention.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		F219F3FA249FA281007517D1 /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				F219F3FB249FA287007517D1 /* RealmClasses */,
+				F219F3FE249FA359007517D1 /* RealmSingletoneManager.swift */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
+		F219F3FB249FA287007517D1 /* RealmClasses */ = {
+			isa = PBXGroup;
+			children = (
+				F219F3FC249FA2A3007517D1 /* CharacterR.swift */,
+				F219F400249FA5B0007517D1 /* ImageR.swift */,
+			);
+			path = RealmClasses;
+			sourceTree = "<group>";
+		};
+		F25ACA17249F6EA700DF2D5A /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				F25ACA1D249F70AE00DF2D5A /* ViewModel */,
+				F25ACA18249F6F7C00DF2D5A /* View */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		F25ACA18249F6F7C00DF2D5A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F25ACA19249F6F9A00DF2D5A /* SearchViewController.swift */,
+				F25ACA1B249F6FBF00DF2D5A /* SearchCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F25ACA1D249F70AE00DF2D5A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F25ACA1E249F70C100DF2D5A /* SearchViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		F2801EA7249DBF7B00223B82 /* Details */ = {
@@ -257,6 +301,7 @@
 			isa = PBXGroup;
 			children = (
 				F285D993249D6D2100B0D87A /* TitleCustomView.swift */,
+				F2887A6E249F927000AD0A97 /* TextField.swift */,
 				F25ACA15249F5F7500DF2D5A /* LoadingView.xib */,
 			);
 			path = Components;
@@ -419,9 +464,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F25ACA1A249F6F9A00DF2D5A /* SearchViewController.swift in Sources */,
 				F2801EA3249DAE4400223B82 /* CharacterData.swift in Sources */,
 				F2114BC6249D3EBC00B82B20 /* APIRouter.swift in Sources */,
 				F285D9A0249D7C6B00B0D87A /* CharacterViewModel.swift in Sources */,
+				F219F401249FA5B0007517D1 /* ImageR.swift in Sources */,
 				F2114BB1249D23DB00B82B20 /* AppDelegate.swift in Sources */,
 				F285D996249D6DEA00B0D87A /* CharacterViewController.swift in Sources */,
 				F2114BCF249D46E300B82B20 /* RootViewController.swift in Sources */,
@@ -430,16 +477,21 @@
 				F2801EAE249DC76000223B82 /* DetailsViewModel.swift in Sources */,
 				F2114BB3249D23DB00B82B20 /* SceneDelegate.swift in Sources */,
 				F2801EB3249DDE4000223B82 /* ShowDetailsCell.swift in Sources */,
+				F2887A6F249F927000AD0A97 /* TextField.swift in Sources */,
+				F25ACA1C249F6FBF00DF2D5A /* SearchCell.swift in Sources */,
 				F2114BCA249D3EE400B82B20 /* Constants.swift in Sources */,
 				F2114BD3249D4D7F00B82B20 /* ShowType.swift in Sources */,
+				F219F3FD249FA2A3007517D1 /* CharacterR.swift in Sources */,
 				F2801EBC249E033700223B82 /* CollectionResponseData.swift in Sources */,
 				F25ACA10249F436A00DF2D5A /* ShowImageViewController.swift in Sources */,
 				F25ACA0E249F411800DF2D5A /* CardPagingLayout.swift in Sources */,
+				F25ACA1F249F70C100DF2D5A /* SearchViewModel.swift in Sources */,
 				F285D99A249D726200B0D87A /* DictionaryExtention.swift in Sources */,
 				F285D998249D6EAB00B0D87A /* CharacterCell.swift in Sources */,
 				F285D994249D6D2100B0D87A /* TitleCustomView.swift in Sources */,
 				F2801EAC249DC73600223B82 /* DetailsViewController.swift in Sources */,
 				F2114BD1249D4B6200B82B20 /* Character.swift in Sources */,
+				F219F3FF249FA359007517D1 /* RealmSingletoneManager.swift in Sources */,
 				F25ACA14249F472900DF2D5A /* FullScreenImageCell.swift in Sources */,
 				F2114BD5249D4DA200B82B20 /* Image.swift in Sources */,
 				F2801EBE249E037700223B82 /* CollectionData.swift in Sources */,
