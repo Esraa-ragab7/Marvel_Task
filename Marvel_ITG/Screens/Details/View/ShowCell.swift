@@ -16,6 +16,9 @@ class ShowCell: UICollectionViewCell {
     
     // MARK: - Display Function 
     func display(showType: ShowType){
+        imageView.kf.indicatorType = .activity
+        (imageView.kf.indicator?.view as? UIActivityIndicatorView)?.style = .large
+        (imageView.kf.indicator?.view as? UIActivityIndicatorView)?.color = .white
         imageView.kf.setImage(with:  showType.thumbnail.imageUrl)
         titleLabel.text = showType.title
     }

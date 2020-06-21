@@ -20,7 +20,9 @@ class CharacterCell: UITableViewCell {
     func display(character: Character) {
         if let imageURL = character.thumbnail?.imageUrl {
             characterImageView.kf.indicatorType = .activity
-            characterImageView.kf.setImage(with: imageURL)
+            (characterImageView.kf.indicator?.view as? UIActivityIndicatorView)?.style = .large
+            (characterImageView.kf.indicator?.view as? UIActivityIndicatorView)?.color = .white
+            characterImageView.kf.setImage(with: imageURL, placeholder: nil, options: [.transition(.fade(0.7))])
         }
         nameLabel.text = character.name
     }

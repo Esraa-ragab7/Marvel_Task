@@ -31,6 +31,7 @@ class ShowDetailsCell: UITableViewCell {
         if showType["loading"] as? Bool ?? false {
             noItemsFound.isHidden = true
             loading.isHidden = false
+            loading.startAnimating()
         } else if showTypes.count > 0 {
             noItemsFound.isHidden = true
             loading.isHidden = true
