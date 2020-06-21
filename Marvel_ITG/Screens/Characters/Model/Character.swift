@@ -12,7 +12,11 @@ struct Character: Codable {
     let name: String?
     let description: String?
     let thumbnail: Image?
-    let comics: Comics?
+    let resourceURI: String
+    let comics: ShowTypes
+    let series: ShowTypes
+    let stories: ShowTypes
+    let events: ShowTypes
     
 }
 
@@ -23,6 +27,10 @@ extension Character {
         case name
         case description
         case thumbnail
+        case resourceURI
         case comics
+        case series
+        case stories
+        case events
     }
 }

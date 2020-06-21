@@ -6,3 +6,15 @@
 //
 
 import Foundation
+
+struct CollectionData: Codable {
+    let results: [ShowType]
+    
+}
+
+extension CollectionData {
+    
+    enum CodingKeys: String , CodingKey {
+        case results
+    }
+}
