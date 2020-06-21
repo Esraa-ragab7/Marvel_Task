@@ -8,7 +8,7 @@
 import Alamofire
 
 enum APIRouter: URLRequestConvertible {
-    case getCharchters(offset: Int, limit: Int)
+    case getCharchters(text: String, offset: Int, limit: Int)
     case getCollections(offset: Int, limit: Int, url: String)
     
     // MARK: - HTTPMethod
@@ -40,7 +40,12 @@ enum APIRouter: URLRequestConvertible {
     // MARK: - Headers
     private var queries: [String:String] {
         switch self {
-        case .getCharchters(let offset, let limit), .getCollections(let offset, let limit, _):
+        case .getCharchters(let text, let offset, let limit):
+            if text != "" {
+                return ["nameStartsWith": text, "offset": "\(offset)", "limit": "\(limit)"]
+            }
+            return ["offset": "\(offset)", "limit": "\(limit)"]
+        case .getCollections(let offset, let limit, _):
             return ["offset": "\(offset)", "limit": "\(limit)"]
         }
     }

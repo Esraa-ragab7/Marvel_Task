@@ -9,8 +9,8 @@ import Alamofire
 
 class APIClient {
     
-    static func getCharchters(offset: Int, limit: Int, completion:@escaping  (Result<CharacterResponse,Error>)->Void) {
-        AF.request(APIRouter.getCharchters(offset: offset, limit: limit)).responseDecodable { (response: DataResponse<CharacterResponse>) in
+    static func getCharchters(text: String = "", offset: Int, limit: Int, completion:@escaping  (Result<CharacterResponse,Error>)->Void) {
+        AF.request(APIRouter.getCharchters(text: text, offset: offset, limit: limit)).responseDecodable { (response: DataResponse<CharacterResponse>) in
             completion(response.result)
         }
     }
