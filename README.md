@@ -1,5 +1,7 @@
 # Marvel_Task
 
+This app use Marvel API to get all the characters, comics, stories, events and series.
+
 # Installation
 
 Download the project.
@@ -15,6 +17,9 @@ dublicte the Secrets.example.plist file.
 rename the dublicated one with Secrets.plist
 
 Open the workspace Marvel.xcworkspace.
+
+# TODO
+UI & Unit test
 
 # Author
 Esraa Ragab
