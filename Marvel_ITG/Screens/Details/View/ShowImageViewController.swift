@@ -1,13 +1,13 @@
 //
-//  RootViewController.swift
+//  ShowImageViewController.swift
 //  Marvel_ITG
 //
-//  Created by Esraa Mohamed Ragab on 6/19/20.
+//  Created by Esraa Mohamed Ragab on 6/21/20.
 //
 
 import UIKit
 
-class RootViewController: UIViewController {
+class ShowImageViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

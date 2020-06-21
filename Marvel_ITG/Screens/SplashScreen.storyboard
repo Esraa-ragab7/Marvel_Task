@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Splash View Controller-->
+        <scene sceneID="3Zl-QW-bKS">
+            <objects>
+                <viewController storyboardIdentifier="SplashViewController" id="hUi-Pr-4rx" customClass="SplashViewController" customModule="Marvel_ITG" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="og3-iX-mfL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MarvelScreen" translatesAutoresizingMaskIntoConstraints="NO" id="Rlh-pL-3jU">
+                                <rect key="frame" x="20" y="303" width="374" height="290"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Rlh-pL-3jU" firstAttribute="leading" secondItem="og3-iX-mfL" secondAttribute="leading" constant="20" id="3ec-xF-ln9"/>
+                            <constraint firstItem="dy9-4s-lKn" firstAttribute="trailing" secondItem="Rlh-pL-3jU" secondAttribute="trailing" constant="20" id="QLx-50-Qlp"/>
+                            <constraint firstItem="Rlh-pL-3jU" firstAttribute="centerY" secondItem="og3-iX-mfL" secondAttribute="centerY" id="pxV-dc-O8J"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dy9-4s-lKn"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f0B-0k-xNW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="96" y="158"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="MarvelScreen" width="600" height="290"/>
+    </resources>
+</document>
