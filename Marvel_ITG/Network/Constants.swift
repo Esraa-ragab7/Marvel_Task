@@ -7,15 +7,17 @@
 
 import Foundation
 import CryptoSwift
+import Keys
 
 struct Constants {
     struct ProductionServer {
         static let baseURL = "https://gateway.marvel.com/v1/public"
         
         static func getCredentials() -> String{
+            let keys = Marvel_ITGKeys()
             let ts = Date().timeIntervalSince1970.description
-            let hash = "\(ts)\(valueForAPIKey(named:"privateKey"))\(valueForAPIKey(named:"publicKey"))".md5()
-            let authParams = ["ts": ts, "apikey": valueForAPIKey(named:"publicKey"), "hash": hash]
+            let hash = "\(ts)\(keys.privateKey)\(keys.publicKey)".md5()
+            let authParams = ["ts": ts, "apikey": keys.publicKey, "hash": hash]
             return authParams.queryString!
         }
     }

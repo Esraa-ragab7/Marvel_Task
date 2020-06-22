@@ -13,3 +13,10 @@ target 'Marvel_ITG' do
   # Pods for Marvel_ITG
 
 end
+
+plugin 'cocoapods-keys', {
+  :project => "Marvel_ITG",
+  :keys => [
+    "privateKey",
+    "publicKey"
+  ]}
