@@ -1,6 +1,7 @@
 # Marvel_Task
 
 This app use Marvel API to get all the characters, comics, stories, events and series.
+useing mvvm structure
 
 # Installation
 
